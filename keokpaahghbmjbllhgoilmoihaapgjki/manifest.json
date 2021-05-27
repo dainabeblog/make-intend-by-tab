@@ -1,0 +1,20 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "Indent by Tab Key",
+  "description": "Insert space indent on pushing tab key",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*",
+        "https://qiita.com/*"
+      ],
+      "js": ["js/content_script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Indent by Tab Key"
+  }
+}

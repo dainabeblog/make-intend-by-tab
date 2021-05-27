@@ -1,13 +1,14 @@
 {
-  "name": "【導入】chrome.* API",
+  "name": "make intend by tab",
   "manifest_version": 2,
   "version": "1.0",
   "browser_action": {
-    "default_title": "【導入】chrome.* API",
+    "default_title": "make intend by tab",
     "default_popup": "popup.html"
   },
 
   "background": {
+    "matches": ["https://qiita.com/*", "http://qiita.com/*"],
     "scripts": ["background.js"]
   }
 }
